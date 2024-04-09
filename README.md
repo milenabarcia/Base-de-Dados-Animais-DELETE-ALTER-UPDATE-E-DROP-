@@ -39,6 +39,6 @@ Produza o Readme do repositório remoto e tire um print da tela após o término
 
 Coloque comentários em seu código.
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](Screnshot_AltersUpdates.jpg)
 
 
