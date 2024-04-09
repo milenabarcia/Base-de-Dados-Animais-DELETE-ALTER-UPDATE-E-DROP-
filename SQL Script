@@ -53,7 +53,10 @@ CREATE  TABLE Animal (
    OR strftime('%m-%d', data_nasc) BETWEEN '01-01' AND '01-19';
  SELECT * FROM  Animal WHERE nome LIKE '% %';
 
--- UPDATES E ALETES --
+-- INDICADOR DE QUE OS UPDATES SÃO SEGUROS -
+SET SQL_SAFE_UPDATES = 0;
+
+-- UPDATES E ALTERS --
 -- Altere o nome do Pateta para Goofy--
 UPDATE Animal SET nome = 'Goofy' WHERE nome = 'Pateta';
 
@@ -61,7 +64,10 @@ UPDATE Animal SET nome = 'Goofy' WHERE nome = 'Pateta';
 UPDATE Animal SET peso = 10 WHERE nome = 'Garfield';
 
 -- Altere a cor de todos os gatos para laranja--
-UPDATE Animal SET cor = 'Laranja' WHERE cor IN ('Marrom', 'Preto', 'Azul', 'Beje');
+UPDATE Animal SET cor = 'Laranja' WHERE cor = 'Marrom';
+UPDATE Animal SET cor = 'Laranja' WHERE cor = 'Preto';
+UPDATE Animal SET cor = 'Laranja' WHERE cor =  'Azul';
+UPDATE Animal SET cor = 'Laranja' WHERE cor =  'Beje';
 
 -- Crie um campo altura para os animais--
 ALTER TABLE Animal ADD altura DECIMAL(8,2);
